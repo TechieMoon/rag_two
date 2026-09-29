@@ -59,11 +59,11 @@ pip install -r requirements.txt
 ### PART 02 LCEL 고급 문법
 
 
-**CHAPTER 04 LCEL 고급 문법으로 Runnable 활용하기**
+**CHAPTER 04 LCEL 고급 문법으로 Runnable 활용하기** → [`ch04/`](ch04/)
 
 | 절 | 내용 | 코드 | 정리 문서 | 비고 |
 |---|---|---|---|---|
-| 01 | RunnablePassthrough | - | - |  |
+| 01 | RunnablePassthrough | [01_runnable_passthrough.ipynb](ch04/01_runnable_passthrough.ipynb) | [01_runnable_passthrough.md](ch04/01_runnable_passthrough.md) |  |
 | 02 | Runnable 구조 검토하기 | - | - |  |
 | 03 | RunnableLambda | - | - |  |
 | 04 | RunnableBranch와 RunnableLambda를 이용한 라우팅 | - | - |  |
