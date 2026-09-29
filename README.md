@@ -45,14 +45,14 @@ pip install -r requirements.txt
 | 02 | RAPTOR | - | - |  |
 | 03 | 무료 오픈 모델로 구현하는 문서 기반 QA 시스템 | - | - |  |
 
-**CHAPTER 03 사전에 정의된 체인**
+**CHAPTER 03 사전에 정의된 체인** → [`ch03/`](ch03/)
 
 | 절 | 내용 | 코드 | 정리 문서 | 비고 |
 |---|---|---|---|---|
-| 01 | Stuff 요약 | - | - |  |
-| 02 | Map-Reduce 요약 | - | - |  |
-| 03 | Map-Refine 요약 | - | - |  |
-| 04 | Chain of Density(CoD) 요약 | - | - |  |
+| 01 | Stuff 요약 | [01-04_document_summarization.ipynb](ch03/01-04_document_summarization.ipynb) | [01-04_document_summarization.md](ch03/01-04_document_summarization.md) | `langchain.hub.pull()` 대신 `langsmith.Client().pull_prompt()`로 Hub 프롬프트 사용 |
+| 02 | Map-Reduce 요약 | [01-04_document_summarization.ipynb](ch03/01-04_document_summarization.ipynb) | [01-04_document_summarization.md](ch03/01-04_document_summarization.md) | `@chain` 데코레이터로 Map→Reduce를 하나의 Runnable로 |
+| 03 | Map-Refine 요약 | [01-04_document_summarization.ipynb](ch03/01-04_document_summarization.ipynb) | [01-04_document_summarization.md](ch03/01-04_document_summarization.md) |  |
+| 04 | Chain of Density(CoD) 요약 | [01-04_document_summarization.ipynb](ch03/01-04_document_summarization.ipynb) | [01-04_document_summarization.md](ch03/01-04_document_summarization.md) |  |
 | 05 | Clustering-Map-Refine 요약 | - | - |  |
 | 06 | SQL 쿼리 생성기 | - | - |  |
 
@@ -74,11 +74,11 @@ pip install -r requirements.txt
 ### PART 03 RAG 평가와 개선
 
 
-**CHAPTER 05 RAGAS로 답변 평가하기**
+**CHAPTER 05 RAGAS로 답변 평가하기** → [`ch05/`](ch05/)
 
 | 절 | 내용 | 코드 | 정리 문서 | 비고 |
 |---|---|---|---|---|
-| 01 | 합성 테스트 데이터셋 생성하기 | - | - |  |
+| 01 | 합성 테스트 데이터셋 생성하기 | [01_ragas_synthetic_testset.ipynb](ch05/01_ragas_synthetic_testset.ipynb) | [01_ragas_synthetic_testset.md](ch05/01_ragas_synthetic_testset.md) | ragas 0.1 → 0.4: `LangchainLLMWrapper` 대신 `llm_factory(client=AsyncOpenAI())`, evolution(`simple`/`reasoning`/`multi_context`) 대신 synthesizer 기반 `query_distribution`, `adapt_prompts("korean")`로 한국어 질문 생성 |
 | 02 | RAGAS로 평가하기 | - | - |  |
 | 03 | 테스트 데이터셋 번역 및 업로드 관리하기 | - | - |  |
 

@@ -11,3 +11,9 @@ langchain-huggingface
 langchain-cohere
 sentence-transformers
 faiss-cpu
+langsmith
+openai
+ragas
+pandas
+pypdf
+pdfplumber
