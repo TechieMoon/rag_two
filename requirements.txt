@@ -1,0 +1,13 @@
+# 심화편 노트북에서 import 하는 패키지 목록 (버전 고정 안 함)
+python-dotenv
+ipykernel
+langchain
+langchain-core
+langchain-openai
+langchain-community
+langchain-classic
+langchain-text-splitters
+langchain-huggingface
+langchain-cohere
+sentence-transformers
+faiss-cpu
